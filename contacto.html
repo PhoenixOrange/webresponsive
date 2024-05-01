@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body class="contacto">
+    <!-- Background image from https://www.freepik.es/ by vecstock -->
+
+<!-- CABECERA -->
+<header class="cabecera">
+    <img class="logo" src="img/logo-no-background.png" alt="Logo Cexoal">
+    <div class="textohead">Teléfono: 745 10 25 63</div>
+    
+    <!-- MENU NAVEGACION -->
+    <nav class="menu">
+        <ul class="nav">   
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quienes.html">Quiénes Somos</a>
+                <ul>
+                    <li><a href="#">Misión</a></li>
+                    <li><a href="#">Valor</a></li>
+                    <li><a href="#">Visión</a></li>
+                    <li><a href="#">Equipo</a>
+                        <ul>
+                            <li><a href="#">Comercial</a></li>
+                            <li><a href="#">Aeroespacial</a></li>
+                            <li><a href="#">Tripulantes</a></li>
+                            <li><a href="#">Controladores</a></li>
+                            <li><a href="#">Dirección</a></li>
+                        </ul>   
+                    </li>
+                </ul>
+            </li>
+            <li><a href="areas.html">Áreas de actuación</a>
+                <ul>
+                    <li><a href="#">Planetas</a></li>
+                    <li><a href="#">Cruceros</a></li>
+                    <li><a href="#">Bodas</a></li>
+                    <li><a href="#">Galaxia</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Publicaciones</a></li>
+            <li><a href="#">Localización</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- PARTE CENTRAL WEB -->
+<div class="centroweb_contacto">
+<section class="formulario">
+    <header>
+    <h1>Formulario de contacto</h1>
+    <p>Tengas claro tu próximo viaje o simplemente busques información, no dudes en escribirnos...</p>
+    </header>
+    <form method="post" action="mailto:info@cexoal.com" class="formulario_contacto">
+        <fieldset>
+        <legend>Datos Personales</legend>
+            <div class="persdata">  
+                <label for="nombre">Nombre:</label><input id="nombre" name="nombre" type="text" placeholder="ej. Mario" required>
+                <label for="apellido">Apellidos: </label><input type="text" name="apellido" id="apellido" placeholder="ej. García Díaz" required>
+                <label for="email">Email válido: </label><input type="text" name="email" id="email" placeholder="ej.nombre@dominio.com" required>
+                <label for="edad">Teléfono</label><input id="telefono" type="text" name="telefono" placeholder="610450987" pattern="000000000" maxlength="9">
+                <label for="origen">Región (opcional) </label><input type="text" name="origen" placeholder="ej.Madrid, España" id="origen">
+                <label for="edad">Fecha de nacimiento (opcional) </label><input type="date" name="edad" id="edad">
+            </div>
+        </fieldset>
+        <br>
+        <fieldset class="userinfo">
+            <legend>Algo más sobre ti</legend>
+                Usuario<input type="radio" name="tipocuenta" id="usuario" checked>
+                Empresa<input type="radio" name="tipocuenta" id="empresa">
+                Docencia<input type="radio" name="tipocuenta" id="docencia">
+                Otros (especificar) <input type="text" name="tipocuenta" id="otros_usuarios">
+                <br><br>¿Cuántos viajes espaciales has realizado previamente? <input type="number" name="viajes" id="viajes" min="0" max="99">
+                <br><br>Si eres docente, por favor, sube tu carnet acreditativo <input type="file" name="carnet" id="carnet" accept=".pdf, .jpg, .png">
+        </fieldset>
+        <br>
+        <fieldset class="observaciones">
+            <legend>Cuéntanos tu idea</legend>
+            <textarea name="observaciones_texto" id="observaciones_texto" maxlength="300" 
+            placeholder="Destino ideal, días de viaje, número de personas..." required></textarea>
+            <br><br><label for="referido">¿Cómo has oído hablar de nosotros? 
+                <select id="referido" name="referido">
+                    <option value="">(Selecciona una)</option>
+                    <option value="1">Publicidad en Internet</option>
+                    <option value="2">Amigos / Familiares</option>
+                    <option value="3">Noticias</option>
+                    <option value="4">Otros</option>
+                  </select>
+            </label>
+        </fieldset>
+        <fieldset class="enviar">
+            <input type="checkbox" name="terms" id="terms" required> He leído y acepto los <a href="#">términos y condiciones</a> de uso
+            <br><input type="submit" value="Enviar formulario">
+        </fieldset>
+    </form>
+</section>
+</div>
+
+<!-- PIE DE PAGINA -->
+<footer class="rrss">
+<div class="footxt">¡Síguenos en redes sociales para estar al día de todas nuestras novedades!</div>
+    <ul>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+</footer>
+
+<!-- SCRIPT IONICONS -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

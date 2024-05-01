@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+/* Hemos añadido una animación en los títulos h2 de la página áreas de actuación, para que cambien de color con un bucle de 5 segundos */
+@keyframes anim{
+    0% {color: #ff0;} 
+   35% {color: rgb(12, 20, 138);} 
+   50% {color: #f6f20c;} 
+   75% {color: #f80;} 
+  100% {color: #ff0;}
+}
+
+body{
+    background-image: url(img/spaceship-orbits-dark-galaxy-glowing-blue-comet-generated-by-ai.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Open Sans", sans-serif;
+}
+body.contacto{
+    background-image: url(img/bg_contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+body.areas{
+    background-image: url(img/bg_areas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+header{
+    margin:auto;
+}
+
+header .logo{
+    width: 200px;
+    margin: 30px 10px 10px 10px;
+    padding-left: 5px;
+}
+header.cabecera{
+    background-color:   #0C1D36;
+    width: 50%;
+    height: 8.5em;
+    border: 1px solid #F9F9F9;
+}
+div.textohead{
+    color:whitesmoke;
+    float: inline-end;
+    margin-top: 0.5em;
+    margin-right: 10px;
+}
+nav{
+    background-color:   #0C1D36;
+    width: 49.4%;
+    height: 2em;
+    font-size: 14px;
+    border-top: 1px solid whitesmoke;
+    position: absolute;
+}
+nav ul{
+    list-style: none;
+}
+.nav li a{                                      
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px 12px;
+    display:block;
+}
+nav li a:hover{
+    color:#0C1D36;
+    background-color: #F9CC0B;
+    transition: all 0.3s;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 80px;
+}
+.nav li:hover >ul{
+    display: block;
+    background-color: #0C1D36;
+}
+div.centroweb{
+    background-color: rgba(12,29,54,65%);
+    width: 50%;
+    height: 45em;
+    border: 1px solid #F9F9F9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -1px;
+    font-size: small;
+}
+h1, h2, h3, h4{
+    font-family: "Oswald", sans-serif;
+}
+
+div.centroweb_contacto{
+    background-color: rgba(12,29,54,65%);
+    width: 50%;
+    height: 100%;
+    border: 1px solid #F9F9F9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -1px;
+}
+
+div.centroweb_areas{
+    background-color: rgba(12,29,54,65%);
+    width: 50%;
+    height: 100%;
+    border: 1px solid #F9F9F9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -1px;
+}
+
+div.centroweb_quienes{
+    background-color: rgba(12,29,54,65%);
+    width: 50%;
+    height: 100%;
+    border: 1px solid #F9F9F9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: -1px;
+}
+
+img.astronauta{
+    width: 300px;
+    padding: 10px 20px;
+}
+
+article.intro{
+    padding: 0px 10px;
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 12px;
+}
+
+article p{
+    margin-top: -10px;
+}
+
+h1{
+    color:#F9CC0B;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+img.blog{
+    width: 20px;
+    margin-top: -10px;
+}
+
+div.blogtxt{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+div.negrita{
+    font-weight: bolder;
+}
+
+article footer{
+    font-size: 14px;
+}
+
+div.centroweb a{
+    text-decoration: none;
+    color:#F9CC0B;
+}
+
+aside{
+    border-left: 1px solid whitesmoke;
+    float: right;
+    margin: 0 0 0 10px;
+    color: whitesmoke;
+    padding-right: 20px;
+    width: 340px;
+    height: 45em;
+}
+
+img.aside{
+    width: 300px;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+aside p{
+    padding: 0px 10px;
+    width: 340px;
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 12px;
+}
+
+
+h2.index, h3.index{
+    color:#F9CC0B;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+
+h3{
+    text-align: center;
+}
+
+img.packdelmes{
+    width: 150px;
+    margin: -5px 105px;
+}
+
+p.pack{
+    text-align: center;
+    color:#F9CC0B;
+    font-weight: bolder;
+}
+
+footer.rrss{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+div.footxt{
+    font-size: 12px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer a:hover{
+    color:#F9CC0B;
+}
+
+section.formulario h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+section.formulario p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 14px;
+}
+
+form{
+    color: whitesmoke;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: small;
+}
+
+fieldset legend{
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: -5px;
+}
+
+fieldset{  
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 3px solid #fce5a1;
+}
+  
+  fieldset:last-of-type{
+    border-bottom: none;
+}
+
+div.persdata { 
+    /* Se introduce una estructura de display: grid para que las casillas queden alineadas, como si se tratara de una tabla */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    align-items: center;
+}
+
+input, select{
+    min-height: 1.5em;
+    max-width: 60%;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F9CC0B;
+    color:#0C1D36;
+    margin: 1em auto;
+    display:block;
+    font-family: "Open Sans", sans-serif;
+}
+
+input[type="submit"]:hover{
+    background-color: #0C1D36;
+    color: #F9CC0B;
+}
+
+textarea{
+    min-width: 600px;
+    max-width: 600px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+fieldset a{
+    text-decoration: none;
+    color:#F9CC0B;
+}
+
+section.areas_actu{
+    color: #F9F9F9;
+    padding: 20px;
+    text-align: justify;
+    background-image: url(img/dorm.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+section.areas_actu p, ul{
+    font-size: small;
+}
+
+h2.areas{
+    color:#F9CC0B;
+    text-shadow: 0 0 4px black;
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;   
+}
+
+div.a_planetas{
+    background-color: #00000086;
+    color: #F9CC0B;
+    padding: 10px;
+}
+
+div.a_cruceros{
+    background-color:#3333337d;
+    padding: 10px;
+}
+
+div.a_bodas{
+    background-color:#7979797d;
+    padding: 10px;
+}
+
+img.roche_logo{
+    width: 350px;
+}
+
+div.roche, div.whoimg{
+    display: flex;
+    justify-content: center;
+}
+
+div.a_galaxia{
+    background-color:#202020c0;
+    padding: 10px;
+    color: #F9CC0B;
+}
+
+img.gif_nave{
+    width: 35%;
+    float: right;
+    padding: 30px;
+    margin-top: -15px;
+}
+
+img.gif_galaxia{
+    width: 30%;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+div.whoimg img{
+    width: 40vh;
+}
+
+section.quienes{
+    color: #F9F9F9;
+    padding: 20px;
+    text-align: justify;
+    background-image: url(img/nebula.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+div.qs1, div.qs2, div.qs3, div.qs4, div.qs5{
+    background-color: rgba(12,29,54,65%);
+    padding: 10px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+div.qs5{
+    border-bottom: none;
+}
+
+section.quienes h2{
+    color: #F9CC0B;
+}
+
+section.quienes p{
+    font-size: 13px;
+}
+
+/* Estilos para pantallas grandes (más de 1300px de ancho) */
+@media screen and (min-width: 1300px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente base */
+    }
+}
+
+/* Estilos para tablet en posición vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 14px; /* Tamaño de fuente reducido para tablet en posición vertical */
+    }
+    body {
+        font-size: 12px; /* Tamaño de fuente reducido para teléfono en posición vertical */
+    }
+    header.cabecera{
+        width: 75%;
+        height: 14em;
+    }
+    nav{
+        background-color:   #0C1D36;
+        width: 70%;
+        border:none;
+    }
+    div.centroweb{
+        width: 75%;
+        height: 100%;
+    }    
+    div.centroweb_contacto{
+        width: 75%;
+        height: 100%;
+    }
+    div.centroweb_areas{
+        width: 75%;
+        height: 100%;
+    }
+    div.centroweb_quienes{
+        width: 75%;
+        height: 100%;
+    }
+    img.astronauta{
+        display: none;
+    }
+    aside{
+        border-left: none;
+        float:unset;
+        margin: 0 0 70px 0;
+    }
+    img.aside{
+        width: 115%;
+        margin: 0;
+    }
+    aside p{
+        padding: 0px 10px;
+        width: 115%;
+    }
+    img.gif_nave{
+        display: none;
+    }
+    textarea{
+        min-width: 500px;
+        max-width: 100%;
+    }
+    img.gif_galaxia{
+        width: 30%;
+        float: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Estilos para tablet en posición horizontal */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 14px; /* Tamaño de fuente reducido para tablet en posición horizontal */
+    }
+    body {
+        font-size: 14px; /* Tamaño de fuente reducido para tablet en posición vertical */
+    }
+    body {
+        font-size: 12px; /* Tamaño de fuente reducido para teléfono en posición vertical */
+    }
+    header.cabecera{
+        width: 75%;
+        height: 14em;
+    }
+    nav{
+        background-color:   #0C1D36;
+        width: 70%;
+        border:none;
+    }
+    div.centroweb{
+        width: 75%;
+        height: 100%;
+    }    
+    div.centroweb_contacto{
+        width: 75%;
+        height: 100%;
+    }
+    div.centroweb_areas{
+        width: 75%;
+        height: 100%;
+    }
+    div.centroweb_quienes{
+        width: 75%;
+        height: 100%;
+    }
+    img.astronauta{
+        display: none;
+    }
+    aside{
+        border-left: none;
+        float:unset;
+        margin: 0 0 70px 0;
+    }
+    img.aside{
+        width: 115%;
+        margin: 0;
+    }
+    aside p{
+        padding: 0px 10px;
+        width: 115%;
+    }
+    img.gif_nave{
+        display: none;
+    }
+    textarea{
+        min-width: 500px;
+        max-width: 100%;
+    }
+    img.gif_galaxia{
+        width: 30%;
+        float: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    /* Ejemplo de estilos específicos para tablet en posición horizontal */
+    /* Puedes agregar aquí tus estilos personalizados */
+}
+
+/* Estilos para teléfono en posición vertical */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    body {
+        font-size: 12px; /* Tamaño de fuente reducido para teléfono en posición vertical */
+    }
+    header.cabecera{
+        width: 100%;
+        height: 14em;
+    }
+    nav{
+        background-color:   #0C1D36;
+        width: 95%;
+        border:none;
+    }
+    div.centroweb{
+        width: 100%;
+        height: 100%;
+    }    
+    div.centroweb_contacto{
+        width: 100%;
+        height: 100%;
+    }
+    div.centroweb_areas{
+        width: 100%;
+        height: 100%;
+    }
+    div.centroweb_quienes{
+        width: 100%;
+        height: 100%;
+    }
+    img.astronauta{
+        display: none;
+    }
+    aside{
+        border-left: none;
+        float:unset;
+        margin: 0 0 70px 0;
+    }
+    img.aside{
+        width: 115%;
+        margin: 0;
+    }
+    aside p{
+        padding: 0px 10px;
+        width: 115%;
+    }
+    img.gif_nave{
+        display: none;
+    }
+    textarea{
+        min-width: 300px;
+        max-width: 100%;
+    }
+    img.gif_galaxia{
+        width: 30%;
+        float: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Estilos para teléfono en posición horizontal */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    body {
+        font-size: 12px; /* Tamaño de fuente reducido para teléfono en posición horizontal */
+    }
+    header.cabecera{
+        width: 100%;
+        height: 14em;
+    }
+    nav{
+        background-color:   #0C1D36;
+        width: 95%;
+        border:none;
+    }
+    div.centroweb{
+        width: 100%;
+        height: 100%;
+    }    
+    div.centroweb_contacto{
+        width: 100%;
+        height: 100%;
+    }
+    div.centroweb_areas{
+        width: 100%;
+        height: 100%;
+    }
+    div.centroweb_quienes{
+        width: 100%;
+        height: 100%;
+    }
+    img.astronauta{
+        display: none;
+    }
+    aside{
+        border-left: none;
+        float:unset;
+        margin: 0 0 40px 0;
+        width: 60%;
+    }
+    img.aside{
+        width: 80%;
+        margin: 0 220px;
+    }
+    aside p{
+        padding: 0px 10px;
+        width: 115%;
+    }
+    img.gif_nave{
+        display: none;
+    }
+    textarea{
+        min-width: 400px;
+        max-width: 100%;
+    }
+    img.gif_galaxia{
+        width: 30%;
+        float: left;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+}
